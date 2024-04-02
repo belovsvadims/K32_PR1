@@ -1,0 +1,571 @@
+<mxfile host="Electron" modified="2024-04-02T16:35:12.987Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.0.4 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="rt2zgIFSf60OGoxFEmhL" version="24.0.4" type="device">
+  <diagram name="Page-1" id="h0G0JoL5Gowh_EFD0Wei">
+    <mxGraphModel dx="3253" dy="1595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="PJVRLkl_ec4KcZ_6AdFB-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="380.25000000000034" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-1" value="Sākuma skaitļi&lt;div&gt;&lt;div&gt;10032,&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;10056,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;10080,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;10104,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;10128&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242.64" width="235" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-12" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-2" target="PJVRLkl_ec4KcZ_6AdFB-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-2" value="Izvēlētais skaitlis 10080 vai turipina ar iegūto skaitli kas nāca no pēdējām darbībām kokā" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270.25" y="85" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-19" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-10" target="PJVRLkl_ec4KcZ_6AdFB-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-20" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-10" target="PJVRLkl_ec4KcZ_6AdFB-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-10" value="P1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="255" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-21" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-11" target="PJVRLkl_ec4KcZ_6AdFB-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-11" target="PJVRLkl_ec4KcZ_6AdFB-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-11" value="P2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="255" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-2" target="PJVRLkl_ec4KcZ_6AdFB-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-31" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-14" target="PJVRLkl_ec4KcZ_6AdFB-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-35" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-14" target="PJVRLkl_ec4KcZ_6AdFB-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-14" value="dalam ar 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-32" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-15" target="PJVRLkl_ec4KcZ_6AdFB-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4.689582056016661e-13" y="545" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-36" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-15" target="PJVRLkl_ec4KcZ_6AdFB-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-4.689582056016661e-13" y="545" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-15" value="dalam ar 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="39.999999999999986" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-16" target="PJVRLkl_ec4KcZ_6AdFB-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-37" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-16" target="PJVRLkl_ec4KcZ_6AdFB-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-16" value="dalam ar 2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-34" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-17" target="PJVRLkl_ec4KcZ_6AdFB-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-38" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-17" target="PJVRLkl_ec4KcZ_6AdFB-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-17" value="dalam ar 3" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1189.9999999999998" y="415" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-47" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-23" target="PJVRLkl_ec4KcZ_6AdFB-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-23" value="Pāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-667.37" y="575" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-48" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-24" target="PJVRLkl_ec4KcZ_6AdFB-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-24" value="Nepāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-385.25" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-49" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-25" target="PJVRLkl_ec4KcZ_6AdFB-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-214.75" y="625" as="sourcePoint" />
+            <mxPoint x="-214.75" y="655" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-25" value="Pāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100.00000000000001" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-26" target="PJVRLkl_ec4KcZ_6AdFB-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-26" value="Nepāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185.25" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-51" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-27" target="PJVRLkl_ec4KcZ_6AdFB-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-27" value="Pāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-52" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-28" target="PJVRLkl_ec4KcZ_6AdFB-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-28" value="Nepāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-29" target="PJVRLkl_ec4KcZ_6AdFB-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-29" value="Pāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-30" target="PJVRLkl_ec4KcZ_6AdFB-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-30" value="Nepāra" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1319.9999999999998" y="585" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-74" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-39" target="PJVRLkl_ec4KcZ_6AdFB-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-76" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-39" target="PJVRLkl_ec4KcZ_6AdFB-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-80" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-39" target="PJVRLkl_ec4KcZ_6AdFB-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-39" value="+1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-667.37" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-97" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-40" target="PJVRLkl_ec4KcZ_6AdFB-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-98" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-40" target="PJVRLkl_ec4KcZ_6AdFB-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-99" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-40" target="PJVRLkl_ec4KcZ_6AdFB-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-40" value="-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-385.25" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-172" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-41" target="PJVRLkl_ec4KcZ_6AdFB-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-174" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-41" target="PJVRLkl_ec4KcZ_6AdFB-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-176" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-41" target="PJVRLkl_ec4KcZ_6AdFB-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-41" value="+1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100.00000000000001" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-173" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-42" target="PJVRLkl_ec4KcZ_6AdFB-122">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-175" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-42" target="PJVRLkl_ec4KcZ_6AdFB-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-177" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-42" target="PJVRLkl_ec4KcZ_6AdFB-117">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-42" value="-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185.25" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-178" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-43" target="PJVRLkl_ec4KcZ_6AdFB-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-180" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-43" target="PJVRLkl_ec4KcZ_6AdFB-125">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-182" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-43" target="PJVRLkl_ec4KcZ_6AdFB-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-43" value="+1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-179" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-44" target="PJVRLkl_ec4KcZ_6AdFB-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-181" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-44" target="PJVRLkl_ec4KcZ_6AdFB-137">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-183" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-44" target="PJVRLkl_ec4KcZ_6AdFB-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-44" value="-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-184" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-45" target="PJVRLkl_ec4KcZ_6AdFB-158">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-186" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-45" target="PJVRLkl_ec4KcZ_6AdFB-149">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-188" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-45" target="PJVRLkl_ec4KcZ_6AdFB-153">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-45" value="+1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-185" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-46" target="PJVRLkl_ec4KcZ_6AdFB-217">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1295.714285714285" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-187" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-46" target="PJVRLkl_ec4KcZ_6AdFB-208">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1360.0000000000002" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-189" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-46" target="PJVRLkl_ec4KcZ_6AdFB-212">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1455.2499999999998" y="745" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-46" value="-1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1319.9999999999998" y="655" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-75" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-55" target="PJVRLkl_ec4KcZ_6AdFB-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-55" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-83" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-63" target="PJVRLkl_ec4KcZ_6AdFB-81">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-650" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-63" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-670" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-77" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-71" target="PJVRLkl_ec4KcZ_6AdFB-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-71" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-574.75" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-78" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-72" target="PJVRLkl_ec4KcZ_6AdFB-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-72" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-574.75" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-73" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-574.75" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-82" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-79" target="PJVRLkl_ec4KcZ_6AdFB-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-79" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-760" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-81" target="PJVRLkl_ec4KcZ_6AdFB-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-830" y="925" />
+              <mxPoint x="-830" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-81" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-750" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-85" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-86" target="PJVRLkl_ec4KcZ_6AdFB-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-86" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-385.25" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-87" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-88" target="PJVRLkl_ec4KcZ_6AdFB-96">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-365.25" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-88" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-385.25" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-89" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-90" target="PJVRLkl_ec4KcZ_6AdFB-92">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-90" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-91" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-92" target="PJVRLkl_ec4KcZ_6AdFB-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-92" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-93" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-290" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-94" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-95" target="PJVRLkl_ec4KcZ_6AdFB-96">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-95" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-475.25" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-96" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-465.25" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-100" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-101" target="PJVRLkl_ec4KcZ_6AdFB-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-101" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100.00000000000001" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-102" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-103" target="PJVRLkl_ec4KcZ_6AdFB-111">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80.00000000000001" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-103" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-100.00000000000001" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-104" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-105" target="PJVRLkl_ec4KcZ_6AdFB-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-105" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-4.750000000000014" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-106" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-107" target="PJVRLkl_ec4KcZ_6AdFB-108">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-107" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-4.750000000000014" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-108" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-4.750000000000014" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-109" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-110" target="PJVRLkl_ec4KcZ_6AdFB-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-110" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-111" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-112" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-113" target="PJVRLkl_ec4KcZ_6AdFB-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-113" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185.25" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-114" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-115" target="PJVRLkl_ec4KcZ_6AdFB-123">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="205.25" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-115" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185.25" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-116" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-117" target="PJVRLkl_ec4KcZ_6AdFB-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-117" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280.5" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-118" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-119" target="PJVRLkl_ec4KcZ_6AdFB-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-119" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280.5" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-120" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280.5" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-121" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-122" target="PJVRLkl_ec4KcZ_6AdFB-123">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-122" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="95.24999999999999" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-123" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="105.24999999999999" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-124" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-125" target="PJVRLkl_ec4KcZ_6AdFB-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-125" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-126" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-127" target="PJVRLkl_ec4KcZ_6AdFB-135">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-127" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-128" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-129" target="PJVRLkl_ec4KcZ_6AdFB-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-129" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="565.25" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-130" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-131" target="PJVRLkl_ec4KcZ_6AdFB-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-131" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="565.25" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-132" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="565.25" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-133" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-134" target="PJVRLkl_ec4KcZ_6AdFB-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-134" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-135" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-136" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-137" target="PJVRLkl_ec4KcZ_6AdFB-139">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-137" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-138" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-139" target="PJVRLkl_ec4KcZ_6AdFB-147">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-139" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-140" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-141" target="PJVRLkl_ec4KcZ_6AdFB-143">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-141" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="855.25" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-142" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-143" target="PJVRLkl_ec4KcZ_6AdFB-144">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-143" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="855.25" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-144" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="855.25" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-145" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-146" target="PJVRLkl_ec4KcZ_6AdFB-147">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-146" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-147" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-148" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-149" target="PJVRLkl_ec4KcZ_6AdFB-151">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-149" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-150" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-151" target="PJVRLkl_ec4KcZ_6AdFB-159">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1059.9999999999998" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-151" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-152" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-153" target="PJVRLkl_ec4KcZ_6AdFB-155">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-153" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1135.2499999999998" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-154" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-155" target="PJVRLkl_ec4KcZ_6AdFB-156">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-155" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1135.2499999999998" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-156" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1135.2499999999998" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-157" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-158" target="PJVRLkl_ec4KcZ_6AdFB-159">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-158" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="950" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-159" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-204" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-202">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-690" y="645" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-710" y="675" />
+              <mxPoint x="-710" y="645" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-205" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-202">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-690" y="705" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-710" y="675" />
+              <mxPoint x="-710" y="705" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-202" value="Spelētājs iegūst" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="660" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-207" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-208" target="PJVRLkl_ec4KcZ_6AdFB-210">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-208" value="Beidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1317.37" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-209" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-210" target="PJVRLkl_ec4KcZ_6AdFB-218">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1337.37" y="875" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-210" value="Banka +1" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1317.37" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-211" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-212" target="PJVRLkl_ec4KcZ_6AdFB-214">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-212" value="Skaitlis =&amp;nbsp;&lt;div&gt;2 vai 3&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1412.62" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-213" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-214" target="PJVRLkl_ec4KcZ_6AdFB-215">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-214" value="Beigas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1412.62" y="815" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-215" value="Speletajs saņem banku" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1412.62" y="885" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-216" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="PJVRLkl_ec4KcZ_6AdFB-217" target="PJVRLkl_ec4KcZ_6AdFB-218">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-217" value="nebeidzas ar 0 vai 5" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1227.37" y="745" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PJVRLkl_ec4KcZ_6AdFB-218" value="Atgriežamies sākumā ar rezultējošo skaitli kā mūsu izvelēto skaitli" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1237.37" y="885" width="130" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
