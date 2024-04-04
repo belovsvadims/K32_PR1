@@ -58,9 +58,13 @@ public class Game {
 
     public static void playerMove() {
         Scanner sc = new Scanner(System.in);
+        int divisor;
 
         System.out.println("Divide " + chosenNumber + " by 2 or 3?");
-        int divisor = sc.nextInt();
+        do {
+            divisor = sc.nextInt();
+        }
+        while (chosenNumber % divisor != 0);
 
         chosenNumber /= divisor;
 
