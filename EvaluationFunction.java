@@ -1,8 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// 3.uzd
 public class EvaluationFunction {
+    public static void main(String[] args) {
+        evaluateState(GameTree.createGameTree(10080));
+        System.out.println(leafNodes);
+    }
     private static List<GameTreeNode> leafNodes; // massivs ar stupceliem, kurus novertesim
     public static void evaluateState(GameTreeNode gameTreeNode) {
         leafNodes = new ArrayList<>(); // massiva deklaresana
