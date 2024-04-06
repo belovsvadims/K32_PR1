@@ -1,7 +1,8 @@
 public class GameTree {
-    private static final int MAX_DEPTH = 3; // koka dzilums
-    public static GameTreeNode createGameTree(int number) {
-        return createGameTreeNode(number, 0, 0, 0, 0);
+    private static final int MAX_DEPTH = 4; // koka dzilums
+    private static final int START_DEPTH = 0;
+    public static GameTreeNode createGameTree(int number, int playerScore, int computerScore, int bank) {
+        return createGameTreeNode(number, playerScore, computerScore, bank, START_DEPTH);
     }
     private static GameTreeNode createGameTreeNode(int number, int playerScore, int computerScore,
                                                    int bank, int depth) {
@@ -27,17 +28,25 @@ public class GameTree {
 
         if (number % 2 == 0) { //pārbaudam vai dalas ar 2
             int newNumber = number / 2;
-            int newPlayerScore = playerScore + 1;
-            int newBank = (newNumber % 10 == 0 || newNumber % 10 == 5) ? bank + 1 : bank; // parbaudam vai beidzas ar 5 vai 0
-            GameTreeNode childNode = createGameTreeNode(newNumber, newPlayerScore, computerScore, newBank, depth);
+            if (depth % 2 == 0) {
+                playerScore = playerScore + 1;
+            } else {
+                computerScore = computerScore + 1;
+            }
+            bank = (newNumber % 10 == 0 || newNumber % 10 == 5) ? bank + 1 : bank; // parbaudam vai beidzas ar 5 vai 0
+            GameTreeNode childNode = createGameTreeNode(newNumber, playerScore, computerScore, bank, depth);
             parentNode.setDividingBy2(childNode);
         }
 
         if (number % 3 == 0) { //parbaudam vai dalās ar 3
             int newNumber = number / 3;
-            int newPlayerScore = (number % 2 == 0) ? playerScore + 1 : playerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
-            int newBank = (newNumber % 10 == 0 || newNumber % 10 == 5) ? bank + 1 : bank;// parbaudam vai beidzas ar 5 vai 0
-            GameTreeNode childNode = createGameTreeNode(newNumber, newPlayerScore, computerScore, newBank, depth);
+            if (depth % 2 == 0) {
+                playerScore = (number % 2 == 0) ? playerScore + 1 : playerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
+            } else {
+                computerScore = (number % 2 == 0) ? computerScore + 1 : computerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
+            }
+            bank = (newNumber % 10 == 0 || newNumber % 10 == 5) ? bank + 1 : bank;// parbaudam vai beidzas ar 5 vai 0
+            GameTreeNode childNode = createGameTreeNode(newNumber, playerScore, computerScore, bank, depth);
             parentNode.setDividingBy3(childNode);
         }
     }
