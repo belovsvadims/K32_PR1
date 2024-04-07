@@ -1,5 +1,4 @@
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Game {
         static int playerScore;
@@ -7,6 +6,12 @@ public class Game {
         static int bank;
         static int chosenNumber;
         static int algorithm; // Which algorithm to use. 1 - Minmax, other - AlphaBeta
+        static int firstMove; // Who is starting the game. 1 - player, other - computer
+
+        static int totalLevels = 0; // The amount of levels in a GameTree
+
+        static GameTreeNodeMinMax currentSelectedNode;
+        static boolean isFirstPlayerComputer;
 
     public static void main(String[] args) {
         startGame();
@@ -31,18 +36,27 @@ public class Game {
         int numberChoice = sc.nextInt();
         chosenNumber = randomNumbers[numberChoice - 1];
         System.out.println(chosenNumber);
+        //chosenNumber = 60;
 
         System.out.println("\nWho starts the game: 1 - player, other int - computer");
-        int firstMove = sc.nextInt();
+        firstMove = sc.nextInt();
 
         System.out.println("\n1 - Minmax, other int - AlphaBeta");
         algorithm = sc.nextInt();
+
+        if (firstMove == 1) { //If computer is the first player, levels are named starting from MAX, else - from MIN
+            isFirstPlayerComputer = false;
+        }
+        minmaxGameTree = new GameTreeNodeMinMax(chosenNumber, playerScore, computerScore, bank, null, isFirstPlayerComputer, 1);
+        MinMaxAlgorithm.calculateWeights();
+        currentSelectedNode = minmaxGameTree;
 
         if (firstMove == 1) {
             playerMove();
         }
         else {
             if (algorithm == 1) {
+
                 // function from Minmax that returns best divisor
                 computerMove(MinMaxAlgorithm.findBestMove());
             }
@@ -56,6 +70,7 @@ public class Game {
     }
 
     public static void playerMove() {
+
         Scanner sc = new Scanner(System.in);
         int divisor;
 
@@ -67,20 +82,24 @@ public class Game {
 
         chosenNumber /= divisor;
 
-        if (chosenNumber % 2 == 0 && (chosenNumber % 10 != 0 || chosenNumber % 10 != 5)) {
-            playerScore += 1;
-        }
-        else if(chosenNumber % 10 == 0 || chosenNumber % 10 == 5) {
-            bank += 1;
-        }
-        else {
-            playerScore -= 1;
+        if (divisor == 2) {
+            currentSelectedNode = currentSelectedNode.getDividingBy2();
+        } else {
+            currentSelectedNode = currentSelectedNode.getDividingBy3();
         }
 
+        if (chosenNumber % 2 == 0) {
+            playerScore += 1;
+        } else {
+            playerScore -= 1;
+        }
+        if (chosenNumber % 10 == 0 || chosenNumber % 10 == 5) {
+            bank += 1;
+        }
 
         System.out.println(chosenNumber);
 
-        if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2) {
+        if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
             if (algorithm == 1) {
                 // function from Minmax that returns best divisor
                 computerMove(MinMaxAlgorithm.findBestMove());
@@ -101,22 +120,30 @@ public class Game {
         sc.close();
     }
 
+    public static GameTreeNodeMinMax minmaxGameTree = null;
+    public static List<GameTreeNodeMinMax> finalNodes = new ArrayList<>();
+
     public static void computerMove(int divisor) {
         chosenNumber /= divisor;
 
-        if (chosenNumber % 2 == 0 && (chosenNumber % 10 != 0 || chosenNumber % 10 != 5)) {
+        if (divisor == 2) {
+            currentSelectedNode = currentSelectedNode.getDividingBy2();
+        } else {
+            currentSelectedNode = currentSelectedNode.getDividingBy3();
+        }
+
+        if (chosenNumber % 2 == 0) {
             computerScore += 1;
-        }
-        else if (chosenNumber % 10 == 0 || chosenNumber % 10 == 5) {
-            bank += 1;
-        }
-        else {
+        } else {
             computerScore -= 1;
+        }
+        if (chosenNumber % 10 == 0 || chosenNumber % 10 == 5) {
+            bank += 1;
         }
 
         System.out.println(chosenNumber);
 
-        if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2) {
+        if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
             playerMove();
         }
         else if (chosenNumber == 2) {
@@ -132,7 +159,7 @@ public class Game {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("playerScore: " + playerScore);
-        System.out.println("computerScore: " + playerScore);
+        System.out.println("computerScore: " + computerScore);
 
         if (playerScore > computerScore) {
             System.out.println("Player wins!");
