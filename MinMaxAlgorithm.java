@@ -1,12 +1,13 @@
 // 4.uzd
 public class MinMaxAlgorithm {
     public static int findBestMove() {
-        //int currentNumber = Game.getCurrentNumber();
         int bestValue = Integer.MIN_VALUE;
 
+        // Children of the node
         GameTreeNodeMinMax child2 = Game.currentSelectedNode.getDividingBy2();
         GameTreeNodeMinMax child3 = Game.currentSelectedNode.getDividingBy3();
 
+        // Checking which value to choose based on the evaluation score(s) of children
         if (child2 == null) {
             bestValue = 3;
         } else if (child3 == null) {
@@ -26,6 +27,7 @@ public class MinMaxAlgorithm {
 
     public static void calculateWeights() {
 
+        // Calculating the evaluation score based on levels
         for (int i = Game.totalLevels; i > 0; i--) {
             calculateEvaluationFunc(Game.minmaxGameTree, i);
         }
@@ -33,15 +35,18 @@ public class MinMaxAlgorithm {
 
     private static void calculateEvaluationFunc(GameTreeNodeMinMax gameTreeNodeMinMax, int treeLevel) {
 
+        // Check if node exists
         if (gameTreeNodeMinMax == null) {
             return;
         }
 
+        // Recurssion for finding the evaluation score for child nodes
         if (gameTreeNodeMinMax.getTreeLevel() != treeLevel) {
             calculateEvaluationFunc(gameTreeNodeMinMax.getDividingBy2(), treeLevel);
             calculateEvaluationFunc(gameTreeNodeMinMax.getDividingBy3(), treeLevel);
             return;
         }
+        // If node has children
         if (gameTreeNodeMinMax.getDividingBy2() != null || gameTreeNodeMinMax.getDividingBy3() != null) {
             if (gameTreeNodeMinMax.getDividingBy2() == null) {
                 gameTreeNodeMinMax.setEvaluationScore(gameTreeNodeMinMax.getDividingBy3().getEvaluationScore());
@@ -62,8 +67,7 @@ public class MinMaxAlgorithm {
                     }
                 }
             }
-        } else {
-
+        } else { // If node doesnt have children (ir strupcels)
                 if (gameTreeNodeMinMax.getComputerScore() > gameTreeNodeMinMax.getPlayerScore()) {
                     gameTreeNodeMinMax.setEvaluationScore(1);
                 } else if (gameTreeNodeMinMax.getComputerScore() < gameTreeNodeMinMax.getPlayerScore()) {

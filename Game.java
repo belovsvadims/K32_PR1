@@ -10,8 +10,8 @@ public class Game {
 
         static int totalLevels = 0; // The amount of levels in a GameTree
 
-        static GameTreeNodeMinMax currentSelectedNode;
-        static boolean isFirstPlayerComputer;
+        static GameTreeNodeMinMax currentSelectedNode; // Current node in GameTreeMinMax creation process
+        static boolean isFirstPlayerComputer; // Checks if computer is the first player
 
     public static void main(String[] args) {
         startGame();
@@ -36,7 +36,6 @@ public class Game {
         int numberChoice = sc.nextInt();
         chosenNumber = randomNumbers[numberChoice - 1];
         System.out.println(chosenNumber);
-        //chosenNumber = 60;
 
         System.out.println("\nWho starts the game: 1 - player, other int - computer");
         firstMove = sc.nextInt();
@@ -47,8 +46,11 @@ public class Game {
         if (firstMove == 1) { //If computer is the first player, levels are named starting from MAX, else - from MIN
             isFirstPlayerComputer = false;
         }
+        // Creating the Game Tree for MinMax
         minmaxGameTree = new GameTreeNodeMinMax(chosenNumber, playerScore, computerScore, bank, null, isFirstPlayerComputer, 1);
+        // Calculating the weight (Evaluation) for every node of a Game Tree
         MinMaxAlgorithm.calculateWeights();
+        // Tekosa virsotne
         currentSelectedNode = minmaxGameTree;
 
         if (firstMove == 1) {
@@ -56,7 +58,6 @@ public class Game {
         }
         else {
             if (algorithm == 1) {
-
                 // function from Minmax that returns best divisor
                 computerMove(MinMaxAlgorithm.findBestMove());
             }
@@ -80,25 +81,29 @@ public class Game {
         }
         while (chosenNumber % divisor != 0);
 
-        chosenNumber /= divisor;
+        chosenNumber /= divisor; // Next number based on the answer
 
+        // Changing current selected node to its child
         if (divisor == 2) {
             currentSelectedNode = currentSelectedNode.getDividingBy2();
         } else {
             currentSelectedNode = currentSelectedNode.getDividingBy3();
         }
 
+        // Checking if player gets the point
         if (chosenNumber % 2 == 0) {
             playerScore += 1;
         } else {
             playerScore -= 1;
         }
+        // Checking if bank gets bigger
         if (chosenNumber % 10 == 0 || chosenNumber % 10 == 5) {
             bank += 1;
         }
 
         System.out.println(chosenNumber);
 
+        // Checking if the game is finished
         if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
             if (algorithm == 1) {
                 // function from Minmax that returns best divisor
@@ -121,10 +126,9 @@ public class Game {
     }
 
     public static GameTreeNodeMinMax minmaxGameTree = null;
-    public static List<GameTreeNodeMinMax> finalNodes = new ArrayList<>();
 
     public static void computerMove(int divisor) {
-        chosenNumber /= divisor;
+        chosenNumber /= divisor; // Next number based on the answer
 
         if (divisor == 2) {
             currentSelectedNode = currentSelectedNode.getDividingBy2();
@@ -132,17 +136,20 @@ public class Game {
             currentSelectedNode = currentSelectedNode.getDividingBy3();
         }
 
+        // Checking if computer gets the point
         if (chosenNumber % 2 == 0) {
             computerScore += 1;
         } else {
             computerScore -= 1;
         }
+        // Checking if bank gets bigger
         if (chosenNumber % 10 == 0 || chosenNumber % 10 == 5) {
             bank += 1;
         }
 
         System.out.println(chosenNumber);
 
+        // Checking if the game is finished
         if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
             playerMove();
         }
@@ -158,6 +165,7 @@ public class Game {
     public static void endGame() {
         Scanner sc = new Scanner(System.in);
 
+        // Output of results
         System.out.println("playerScore: " + playerScore);
         System.out.println("computerScore: " + computerScore);
 

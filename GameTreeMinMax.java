@@ -33,14 +33,16 @@ class GameTreeNodeMinMax {
         this.isMax = isMax;
         this.treeLevel = treeLevel;
 
+        // Finding the amount of levels in a Game Tree
         if (Game.totalLevels < treeLevel) {
             Game.totalLevels = treeLevel;
         }
 
-
+        // Checking if there is no children, and they should be skipped
         boolean skipChild2 = false;
         boolean skipChild3 = false;
 
+        // Divisor
         int divisionBy2 = inputNumber / 2;
         int divisionBy3 = inputNumber / 3;
 
@@ -63,8 +65,10 @@ class GameTreeNodeMinMax {
             skipChild3 = true;
         }
 
+        // List with a score of a current player and bank value
         List<Integer> scoreBank = null;
 
+        // Adding scores based on the current player (MAX - computer, MIN - player)
         if (isMax) {
             if (!skipChild2) {
                 scoreBank = calculateScores(2, computerScore);
@@ -85,13 +89,6 @@ class GameTreeNodeMinMax {
                 this.dividingBy3 = new GameTreeNodeMinMax(divisionBy3, scoreBank.get(0), computerScore, scoreBank.get(1), this, true, treeLevel+1);
             }
         }
-        if (skipChild2 && skipChild3) {
-            Game.finalNodes.add(this);
-        }
-
-
-
-
 
     }
 
@@ -125,11 +122,9 @@ class GameTreeNodeMinMax {
     public int getBank() {
         return bank;
     }
-
     public void setBank(int bank) {
         this.bank = bank;
     }
-
     public int getEvaluationScore() {
         return evaluationScore;
     }
@@ -162,6 +157,7 @@ class GameTreeNodeMinMax {
     }
 
 
+    // Calculating the score based on the gotten number after division
     private List<Integer> calculateScores (int divisor, int currentScore) {
         int localNum = this.number / divisor;
 
@@ -174,7 +170,6 @@ class GameTreeNodeMinMax {
         }
 
         List<Integer> result = new ArrayList<>();
-
         result.add(currentScore);
         result.add(bank);
         return result;
