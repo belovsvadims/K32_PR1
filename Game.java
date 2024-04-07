@@ -78,8 +78,7 @@ public class Game {
         System.out.println("Divide " + chosenNumber + " by 2 or 3?");
         do {
             divisor = sc.nextInt();
-        }
-        while (chosenNumber % divisor != 0);
+        } while (!(divisor == 2 || divisor == 3) || chosenNumber % divisor != 0);
 
         chosenNumber /= divisor; // Next number based on the answer
 
