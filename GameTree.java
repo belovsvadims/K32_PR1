@@ -11,8 +11,8 @@ public class GameTree {
         }
 
         GameTreeNode node = new GameTreeNode(number, playerScore, computerScore, bank);
-        if (number == 2 || number == 3) {
-            // Nosakam punktus
+        if (number == 1) {
+            // Pedejais skaitlis var but vai nu 2, vai nu 3
             return null;
         } else {
             // Veidojam bērnu stadijas

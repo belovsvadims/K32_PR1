@@ -3,7 +3,7 @@ import java.util.List;
 
 public class EvaluationFunction {
     public static void main(String[] args) {
-        System.out.println(evaluateState(GameTree.createGameTree(10080, 0,0,0)));
+        System.out.println(evaluateState(GameTree.createGameTree(15552, 0,0,0)));
                 // !parskatam! speles sakuma stavoklis (jo playerScore, computerScore un bank ir 0)
 
         System.out.println("-------------");
@@ -12,7 +12,7 @@ public class EvaluationFunction {
 
         System.out.println("-------------");
 
-        postOrder(evaluateState(GameTree.createGameTree(10080, 0,0,0)));
+        postOrder(evaluateState(GameTree.createGameTree(15552, 0,0,0)));
                 // //!parskatam! izvada koku ka sarakstu
     }
     static public void postOrder(GameTreeNode root) {   // pect tam izdzesim
@@ -27,8 +27,12 @@ public class EvaluationFunction {
 
         findLeafs(gameTreeNode); // izsaucam funkciju, lai atrast visus koka stupcelus
 
-        for (GameTreeNode i : leafNodes) {
-            i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore()); // noverte strupcelus/speles..stavoklus (atnem no ComputerScore PlayerScore)
+        for (GameTreeNode i : leafNodes) { // noverte strupcelus/speles..stavoklus (atnem no ComputerScore PlayerScore)
+            if (i.getNumber() == 2 || i.getNumber() == 3) {
+                i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() + i.getBank());
+            } else {
+                i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore());
+            }
         }
         return gameTreeNode;
     }
