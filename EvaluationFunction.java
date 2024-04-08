@@ -31,11 +31,11 @@ public class EvaluationFunction {
 
         for (GameTreeNode i : leafNodes) { // noverte strupcelus/speles..stavoklus (atnem no ComputerScore PlayerScore)
             if (i.getNumber() == 2 || i.getNumber() == 3) {
-//                if (i.getEvaluationScore() == 0) {
-//                    i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() + i.getBank());
-//                } else {
-//                    i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() - i.getBank());
-//                }
+                if (i.getEvaluationScore() == 0) {
+                    i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() + i.getBank());
+                } else {
+                    i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() - i.getBank());
+                }
             } else {
                 if (i.getEvaluationScore() == 0) {
                     i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore());
