@@ -1,47 +1,223 @@
 import java.util.*;
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
 
 public class Game {
-        static int playerScore;
-        static int computerScore;
-        static int bank;
-        static int chosenNumber;
+        static int playerScore, computerScore, bank, chosenNumber, divisor, playAgain;
         static int algorithm; // Which algorithm to use. 1 - Minmax, other - AlphaBeta
         static int firstMove; // Who is starting the game. 1 - player, other - computer
+        static int[] randomNumbers = new int[5]; // Array of 5 generated random numbers
 
         static int totalLevels = 0; // The amount of levels in a GameTree
 
         static GameTreeNodeMinMax currentSelectedNode; // Current node in GameTreeMinMax creation process
         static boolean isFirstPlayerComputer; // Checks if computer is the first player
 
+        // GUI
+        static JFrame frame;
+        static JPanel panel, labelPanel;
+        static JLabel headerLabel, label1, label2, label3, label4, label5;
+        static JButton btn1, btn2, btn3, btn4, btn5;
+        static ActionListener numberButtonListener, firstMoveListener, algorithmListener, 
+        divisorListener, playAgainListener;
+
     public static void main(String[] args) {
+        createGUI();
         startGame();
     }
 
+    public static void createGUI() {
+        frame = new JFrame();
+        frame.setSize(250,300);
+        frame.setLayout(new FlowLayout());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setTitle("K32_PR1");
+        panel = new JPanel(new GridLayout(2,3));
+        labelPanel = new JPanel(new GridLayout(0,1));
+
+        headerLabel = new JLabel("", JLabel.CENTER);
+        label1 = new JLabel("", JLabel.CENTER);
+        label2 = new JLabel("", JLabel.CENTER);
+        label3 = new JLabel("", JLabel.CENTER);
+        label4 = new JLabel("", JLabel.CENTER);
+        label5 = new JLabel("", JLabel.CENTER);
+        btn1 = new JButton("");
+        btn2 = new JButton("");
+        btn3 = new JButton("");
+        btn4 = new JButton("");
+        btn5 = new JButton("");
+        btn1.setActionCommand("Button 1");
+        btn2.setActionCommand("Button 2");
+        btn3.setActionCommand("Button 3");
+        btn4.setActionCommand("Button 4");
+        btn5.setActionCommand("Button 5");
+        labelPanel.add(headerLabel);
+        labelPanel.add(label1);
+        labelPanel.add(label2);
+        labelPanel.add(label3);
+        labelPanel.add(label4);
+        labelPanel.add(label5);
+        panel.add(btn1);
+        panel.add(btn2);
+        panel.add(btn3);
+        panel.add(btn4);
+        panel.add(btn5);
+        frame.add(labelPanel);
+        frame.add(panel);
+        frame.setVisible(true);
+
+        // Action Listener for choosing first number
+        numberButtonListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String actionCommand = e.getActionCommand();
+                
+                switch (actionCommand) {
+                    case "Button 1":
+                        chosenNumber = randomNumbers[0];
+                        break;
+                    case "Button 2":
+                        chosenNumber = randomNumbers[1];
+                        break;
+                    case "Button 3":
+                        chosenNumber = randomNumbers[2];
+                        break;
+                    case "Button 4":
+                        chosenNumber = randomNumbers[3];
+                        break;
+                    case "Button 5":
+                        chosenNumber = randomNumbers[4];
+                        break;    
+                }
+            }
+        };
+
+        firstMoveListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String actionCommand = e.getActionCommand();
+                
+                switch (actionCommand) {
+                    case "Button 1":
+                        firstMove = 1;
+                        break;
+                    case "Button 2":
+                        firstMove = 2;
+                        break;
+                }
+            }
+        };
+        
+        algorithmListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String actionCommand = e.getActionCommand();
+                
+                switch (actionCommand) {
+                    case "Button 1":
+                        algorithm = 1;
+                        break;
+                    case "Button 2":
+                        algorithm = 2;
+                        break;
+                }
+            }
+        };
+
+        divisorListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String actionCommand = e.getActionCommand();
+                
+                switch (actionCommand) {
+                    case "Button 1":
+                        divisor = 2;
+                        break;
+                    case "Button 2":
+                        divisor = 3;
+                        break;
+                }
+            }
+        };
+
+        playAgainListener = new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                String actionCommand = e.getActionCommand();
+                
+                switch (actionCommand) {
+                    case "Button 1":
+                        panel.add(btn3);
+                        panel.add(btn4);
+                        panel.add(btn5);
+                        startGame();
+                        break;
+                    case "Button 2":
+                        System.exit(0);
+                        break;
+                }
+            }
+        };
+    }
+
+    // Removes ActionListeners from an existing button and a new one
+    public static void changeActionListener(JButton btn, ActionListener newListener) {
+        for (ActionListener listener : btn.getActionListeners()) {
+            btn.removeActionListener(listener);
+        }
+        btn.addActionListener(newListener);
+    }
+
     public static void startGame() {
-        Scanner sc = new Scanner(System.in);
         playerScore = 0;
         computerScore = 0;
         bank = 0;
-        int[] randomNumbers = new int[5];
+        chosenNumber = 0;
+        firstMove = 0;
+        algorithm = 0;
+
+        label1.setText("");
+        label2.setText("");
+        label3.setText("");
+        label4.setText("");
+        label5.setText("");
 
         for (int i = 0; i < 5; i++) {
             randomNumbers[i] = generateRandomNumber();
         }
 
-        for (int i = 0; i < 5; i++) {
-            System.out.print((i+1) + ". " + randomNumbers[i] + " ");
+        headerLabel.setText("Choose which number to start with");
+        do {
+            btn1.setText(String.valueOf(randomNumbers[0]));
+            changeActionListener(btn1, numberButtonListener);
+            btn2.setText(String.valueOf(randomNumbers[1]));
+            changeActionListener(btn2, numberButtonListener);
+            btn3.setText(String.valueOf(randomNumbers[2]));
+            changeActionListener(btn3, numberButtonListener);
+            btn4.setText(String.valueOf(randomNumbers[3]));
+            changeActionListener(btn4, numberButtonListener);
+            btn5.setText(String.valueOf(randomNumbers[4]));
+            changeActionListener(btn5, numberButtonListener);
         }
+        while (chosenNumber == 0);
 
-        System.out.println("\nChoose a number 1-5: ");
-        int numberChoice = sc.nextInt();
-        chosenNumber = randomNumbers[numberChoice - 1];
-        System.out.println(chosenNumber);
-
-        System.out.println("\nWho starts the game: 1 - player, other int - computer");
-        firstMove = sc.nextInt();
-
-        System.out.println("\n1 - Minmax, other int - AlphaBeta");
-        algorithm = sc.nextInt();
+        panel.remove(btn3);
+        panel.remove(btn4);
+        panel.remove(btn5);
+ 
+        headerLabel.setText("Who starts the game?");
+        do {
+            btn1.setText("Player");
+            changeActionListener(btn1, firstMoveListener);
+            btn2.setText("Computer");
+            changeActionListener(btn2, firstMoveListener);
+        }
+        while (firstMove == 0);
+        
+        headerLabel.setText("Which algorithm should computer use?");
+        do {
+            btn1.setText("Minmax");
+            changeActionListener(btn1, algorithmListener);
+            btn2.setText("AlphaBeta");
+            changeActionListener(btn2, algorithmListener);
+        }
+        while (algorithm == 0);
 
         if (firstMove == 1) { //If computer is the first player, levels are named starting from MAX, else - from MIN
             isFirstPlayerComputer = false;
@@ -66,18 +242,21 @@ public class Game {
                 computerMove(AlphaBetaAlgorithm.findBestMove());
             }
         }
-
-        sc.close();
     }
 
     public static void playerMove() {
+        divisor = 0;
 
-        Scanner sc = new Scanner(System.in);
-        int divisor;
+        label2.setText("Player Score: " + playerScore);
+        label3.setText("Computer Score: " + playerScore);
+        label4.setText("Bank: " + bank);
+        headerLabel.setText("Current number: " + chosenNumber);
 
-        System.out.println("Divide " + chosenNumber + " by 2 or 3?");
         do {
-            divisor = sc.nextInt();
+            btn1.setText("Divide by 2");
+            changeActionListener(btn1, divisorListener);
+            btn2.setText("Divide by 3");
+            changeActionListener(btn2, divisorListener);
         } while (!(divisor == 2 || divisor == 3) || chosenNumber % divisor != 0);
 
         chosenNumber /= divisor; // Next number based on the answer
@@ -120,8 +299,6 @@ public class Game {
         else {
             endGame();
         }
-
-        sc.close();
     }
 
     public static GameTreeNodeMinMax minmaxGameTree = null;
@@ -146,7 +323,7 @@ public class Game {
             bank += 1;
         }
 
-        System.out.println(chosenNumber);
+        label1.setText("Computer divided " + (chosenNumber * divisor) + " by " + divisor + " and got " +  chosenNumber);
 
         // Checking if the game is finished
         if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
@@ -162,32 +339,29 @@ public class Game {
     }
 
     public static void endGame() {
-        Scanner sc = new Scanner(System.in);
+        playAgain = 0;
 
-        // Output of results
-        System.out.println("playerScore: " + playerScore);
-        System.out.println("computerScore: " + computerScore);
+        label2.setText("Player Score: " + playerScore);
+        label3.setText("Computer Score: " + playerScore);
+        label4.setText("Bank: " + bank);
 
         if (playerScore > computerScore) {
-            System.out.println("Player wins!");
+            label5.setText("Player wins!");
         }
         else if (playerScore < computerScore) {
-            System.out.println("Computer wins!");
+            label5.setText("Computer wins!");
         }
         else {
-            System.out.println("Draw!");
+            label5.setText("Draw!");
         }
 
-        System.out.println("Play again? 1 - yes");
-        int playAgain = sc.nextInt();
-        if (playAgain == 1) {
-            startGame();
-        }
-        else {
-            System.exit(0);
-        }
-
-        sc.close();
+        headerLabel.setText("Play again?");
+        do {
+            btn1.setText("Yes");
+            changeActionListener(btn1, playAgainListener);
+            btn2.setText("No");
+            changeActionListener(btn2, playAgainListener);
+        } while (playAgain == 0);
     }
 
     public static int generateRandomNumber() {
