@@ -32,9 +32,9 @@ public class GameTree {
             int newComputerScore = computerScore;
             int newBank = bank;
             if (depth % 2 == 0) {
-                newPlayerScore = playerScore + 1;
+                newPlayerScore = (newNumber % 2 == 0) ? playerScore + 1 : playerScore - 1;
             } else {
-                newComputerScore = computerScore + 1;
+                newComputerScore = (newNumber % 2 == 0) ? computerScore + 1 : computerScore - 1;
             }
             newBank = (newNumber % 10 == 0 || newNumber % 10 == 5) ? bank + 1 : bank; // parbaudam vai beidzas ar 5 vai 0
             GameTreeNode childNode = createGameTreeNode(newNumber, newPlayerScore, newComputerScore, newBank, depth);
@@ -47,9 +47,9 @@ public class GameTree {
             int newComputerScore = computerScore;
             int newBank = bank;
             if (depth % 2 == 0) {
-                newPlayerScore = (number % 2 == 0) ? playerScore + 1 : playerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
+                newPlayerScore = (newNumber % 2 == 0) ? playerScore + 1 : playerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
             } else {
-                newComputerScore = (number % 2 == 0) ? computerScore + 1 : computerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
+                newComputerScore = (newNumber % 2 == 0) ? computerScore + 1 : computerScore - 1; // vai dalās ar 2 bez atlikuma un piešķiram punktu
             }
             newBank = (newNumber % 10 == 0 || newNumber % 10 == 5) ? bank + 1 : bank;// parbaudam vai beidzas ar 5 vai 0
             GameTreeNode childNode = createGameTreeNode(newNumber, newPlayerScore, newComputerScore, newBank, depth);
