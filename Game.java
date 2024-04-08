@@ -5,8 +5,8 @@ import java.awt.event.*;
 
 public class Game {
         static int playerScore, computerScore, bank, chosenNumber, divisor, playAgain;
-        static int algorithm; // Which algorithm to use. 1 - Minmax, other - AlphaBeta
-        static int firstMove; // Who is starting the game. 1 - player, other - computer
+        static int algorithm; // Which algorithm to use. 1 - Minmax, 2 - AlphaBeta
+        static int firstMove; // Who is starting the game. 1 - player, 2 - computer
         static int[] randomNumbers = new int[5]; // Array of 5 generated random numbers
 
         static int totalLevels = 0; // The amount of levels in a GameTree
@@ -15,9 +15,9 @@ public class Game {
         static boolean isFirstPlayerComputer; // Checks if computer is the first player
 
         // GUI
-        static JFrame frame;
-        static JPanel panel, labelPanel;
-        static JLabel headerLabel, label1, label2, label3, label4, label5;
+        //static JFrame frame;
+        static JPanel panel, buttonPanel, labelPanel;
+        static JLabel headerLabel, label1, label2, label3, label4, label5, label6;
         static JButton btn1, btn2, btn3, btn4, btn5;
         static ActionListener numberButtonListener, firstMoveListener, algorithmListener, 
         divisorListener, playAgainListener;
@@ -28,12 +28,12 @@ public class Game {
     }
 
     public static void createGUI() {
-        frame = new JFrame();
-        frame.setSize(250,300);
-        frame.setLayout(new FlowLayout());
+        JFrame frame = new JFrame();
+        frame.setSize(400,400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setTitle("K32_PR1");
-        panel = new JPanel(new GridLayout(2,3));
+        panel = new JPanel(new BorderLayout());
+        buttonPanel = new JPanel(new GridLayout(2,3));
         labelPanel = new JPanel(new GridLayout(0,1));
 
         headerLabel = new JLabel("", JLabel.CENTER);
@@ -42,6 +42,7 @@ public class Game {
         label3 = new JLabel("", JLabel.CENTER);
         label4 = new JLabel("", JLabel.CENTER);
         label5 = new JLabel("", JLabel.CENTER);
+        label6 = new JLabel("", JLabel.CENTER);
         btn1 = new JButton("");
         btn2 = new JButton("");
         btn3 = new JButton("");
@@ -58,12 +59,15 @@ public class Game {
         labelPanel.add(label3);
         labelPanel.add(label4);
         labelPanel.add(label5);
-        panel.add(btn1);
-        panel.add(btn2);
-        panel.add(btn3);
-        panel.add(btn4);
-        panel.add(btn5);
-        frame.add(labelPanel);
+        labelPanel.add(label6);
+        panel.add(labelPanel, BorderLayout.CENTER);
+        buttonPanel.add(btn1);
+        buttonPanel.add(btn2);
+        buttonPanel.add(btn3);
+        buttonPanel.add(btn4);
+        buttonPanel.add(btn5);
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 30, 30, 30));
+        panel.add(buttonPanel, BorderLayout.SOUTH);
         frame.add(panel);
         frame.setVisible(true);
 
@@ -143,9 +147,8 @@ public class Game {
                 
                 switch (actionCommand) {
                     case "Button 1":
-                        panel.add(btn3);
-                        panel.add(btn4);
-                        panel.add(btn5);
+                        frame.dispose();
+                        createGUI();
                         startGame();
                         break;
                     case "Button 2":
@@ -156,7 +159,7 @@ public class Game {
         };
     }
 
-    // Removes ActionListeners from an existing button and a new one
+    // Removes ActionListeners from an existing button and adds a new one
     public static void changeActionListener(JButton btn, ActionListener newListener) {
         for (ActionListener listener : btn.getActionListeners()) {
             btn.removeActionListener(listener);
@@ -177,6 +180,7 @@ public class Game {
         label3.setText("");
         label4.setText("");
         label5.setText("");
+        label6.setText("");
 
         for (int i = 0; i < 5; i++) {
             randomNumbers[i] = generateRandomNumber();
@@ -197,9 +201,9 @@ public class Game {
         }
         while (chosenNumber == 0);
 
-        panel.remove(btn3);
-        panel.remove(btn4);
-        panel.remove(btn5);
+        buttonPanel.remove(btn3);
+        buttonPanel.remove(btn4);
+        buttonPanel.remove(btn5);
  
         headerLabel.setText("Who starts the game?");
         do {
@@ -281,8 +285,6 @@ public class Game {
             bank += 1;
         }
 
-        System.out.println(chosenNumber);
-
         // Checking if the game is finished
         if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
             if (algorithm == 1) {
@@ -347,6 +349,7 @@ public class Game {
     public static void endGame() {
         playAgain = 0;
 
+        headerLabel.setText("Last number: " + chosenNumber);
         label2.setText("Player Score: " + playerScore);
         label3.setText("Computer Score: " + computerScore);
         label4.setText("Bank: " + bank);
@@ -361,13 +364,11 @@ public class Game {
             label5.setText("Draw!");
         }
 
-        headerLabel.setText("Play again?");
-        do {
+        label6.setText("Play again?");
             btn1.setText("Yes");
             changeActionListener(btn1, playAgainListener);
             btn2.setText("No");
             changeActionListener(btn2, playAgainListener);
-        } while (playAgain == 0);
     }
 
     // Nejausu skaitlu generesana speles sakumam
