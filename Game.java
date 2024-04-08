@@ -229,6 +229,7 @@ public class Game {
         // Tekosa virsotne
         currentSelectedNode = minmaxGameTree;
 
+        // Parbaude, vai pirmais gajiens ir cilveka vai datora
         if (firstMove == 1) {
             playerMove();
         }
@@ -244,6 +245,7 @@ public class Game {
         }
     }
 
+    // Speletaja gajiens
     public static void playerMove() {
         divisor = 0;
 
@@ -261,7 +263,7 @@ public class Game {
 
         chosenNumber /= divisor; // Next number based on the answer
 
-        // Changing current selected node to its child
+        // Changing current selected node for Minimax tree to its child
         if (divisor == 2) {
             currentSelectedNode = currentSelectedNode.getDividingBy2();
         } else {
@@ -292,6 +294,7 @@ public class Game {
                 computerMove(AlphaBetaAlgorithm.findBestMove());
             }
         }
+        // Adding bank value to the score if player got a '2' in the final node
         else if (chosenNumber == 2) {
             playerScore += bank;
             endGame();
@@ -303,6 +306,7 @@ public class Game {
 
     public static GameTreeNodeMinMax minmaxGameTree = null;
 
+    // Datora gajiens
     public static void computerMove(int divisor) {
         chosenNumber /= divisor; // Next number based on the answer
 
@@ -329,6 +333,7 @@ public class Game {
         if ((chosenNumber % 2 == 0 || chosenNumber % 3 == 0) && chosenNumber != 2 && chosenNumber != 3) {
             playerMove();
         }
+        // Adding bank value to the score if computer got a '2' in the final node
         else if (chosenNumber == 2) {
             computerScore += bank;
             endGame();
@@ -338,11 +343,12 @@ public class Game {
         }
     }
 
+    // Rezultatu izvade
     public static void endGame() {
         playAgain = 0;
 
         label2.setText("Player Score: " + playerScore);
-        label3.setText("Computer Score: " + playerScore);
+        label3.setText("Computer Score: " + computerScore);
         label4.setText("Bank: " + bank);
 
         if (playerScore > computerScore) {
@@ -364,6 +370,7 @@ public class Game {
         } while (playAgain == 0);
     }
 
+    // Nejausu skaitlu generesana speles sakumam
     public static int generateRandomNumber() {
         Random random = new Random();
         int randomNumber;
