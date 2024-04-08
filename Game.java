@@ -250,7 +250,7 @@ public class Game {
         divisor = 0;
 
         label2.setText("Player Score: " + playerScore);
-        label3.setText("Computer Score: " + playerScore);
+        label3.setText("Computer Score: " + computerScore);
         label4.setText("Bank: " + bank);
         headerLabel.setText("Current number: " + chosenNumber);
 
