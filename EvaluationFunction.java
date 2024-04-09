@@ -12,7 +12,7 @@ public class EvaluationFunction {
 
         for (GameTreeNode i : leafNodes) { // noverte strupcelus/speles..stavoklus (atnem no ComputerScore PlayerScore)
             System.out.println(i.getEvaluationScore());
-            if (i.getNumber() == 2 || i.getNumber() == 3) {
+            if (i.getNumber() == 2) {
                 if (i.getEvaluationScore() == 0) {
                     i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() + i.getBank());
                 } else {
