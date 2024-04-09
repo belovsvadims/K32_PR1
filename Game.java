@@ -15,7 +15,6 @@ public class Game {
         static boolean isFirstPlayerComputer; // Checks if computer is the first player
 
         // GUI
-        //static JFrame frame;
         static JPanel panel, buttonPanel, labelPanel;
         static JLabel headerLabel, label1, label2, label3, label4, label5, label6;
         static JButton btn1, btn2, btn3, btn4, btn5;
@@ -96,6 +95,7 @@ public class Game {
             }
         };
 
+        // Action listener for choosing who goes first
         firstMoveListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String actionCommand = e.getActionCommand();
@@ -111,21 +111,25 @@ public class Game {
             }
         };
         
+        // Action listener for choosing which algorithm to use
         algorithmListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String actionCommand = e.getActionCommand();
                 
                 switch (actionCommand) {
                     case "Button 1":
+                        //Minmax
                         algorithm = 1;
                         break;
                     case "Button 2":
+                        //AlphaBeta
                         algorithm = 2;
                         break;
                 }
             }
         };
 
+        // Action listener for choosing divisor
         divisorListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String actionCommand = e.getActionCommand();
@@ -141,18 +145,14 @@ public class Game {
             }
         };
 
+        // Action listener for quitting game
         playAgainListener = new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 String actionCommand = e.getActionCommand();
                 
                 switch (actionCommand) {
                     case "Button 1":
-                        frame.dispose();
-                        createGUI();
-                        startGame();
-                        break;
-                    case "Button 2":
-                        System.exit(0);
+                    System.exit(0);
                         break;
                 }
             }
@@ -347,7 +347,7 @@ public class Game {
 
     // Rezultatu izvade
     public static void endGame() {
-        playAgain = 0;
+        buttonPanel.remove(btn2);
 
         headerLabel.setText("Last number: " + chosenNumber);
         label2.setText("Player Score: " + playerScore);
@@ -364,11 +364,9 @@ public class Game {
             label5.setText("Draw!");
         }
 
-        label6.setText("Play again?");
-            btn1.setText("Yes");
-            changeActionListener(btn1, playAgainListener);
-            btn2.setText("No");
-            changeActionListener(btn2, playAgainListener);
+        label6.setText("Quit game?");
+        btn1.setText("Yes");
+        changeActionListener(btn1, playAgainListener);
     }
 
     // Nejausu skaitlu generesana speles sakumam
