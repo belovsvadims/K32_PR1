@@ -19,11 +19,7 @@ public class EvaluationFunction {
                     i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore() - i.getBank());
                 }
             } else {
-                if (i.getEvaluationScore() == 0) {
-                    i.setEvaluationScore(i.getPlayerScore() - i.getComputerScore());
-                } else {
-                    i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore());
-                }
+                i.setEvaluationScore(i.getComputerScore() - i.getPlayerScore());
             }
         }
         return gameTreeNode;
