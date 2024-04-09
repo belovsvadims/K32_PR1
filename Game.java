@@ -11,7 +11,9 @@ public class Game {
 
         static int totalLevels = 0; // The amount of levels in a GameTree
 
-        static GameTreeNodeMinMax currentSelectedNode; // Current node in GameTreeMinMax creation process
+        static GameTreeNodeMinMax currentSelectedNodeMinMax; // Current node in GameTreeMinMax creation process
+        static GameTreeNode currentSelectedNode; // Current node in GameTreeMinMax creation process
+
         static boolean isFirstPlayerComputer; // Checks if computer is the first player
 
         // GUI
@@ -226,12 +228,16 @@ public class Game {
         if (firstMove == 1) { //If computer is the first player, levels are named starting from MAX, else - from MIN
             isFirstPlayerComputer = false;
         }
-        // Creating the Game Tree for MinMax
-        minmaxGameTree = new GameTreeNodeMinMax(chosenNumber, playerScore, computerScore, bank, null, isFirstPlayerComputer, 1);
-        // Calculating the weight (Evaluation) for every node of a Game Tree
-        MinMaxAlgorithm.calculateWeights();
-        // Tekosa virsotne
-        currentSelectedNode = minmaxGameTree;
+        if (algorithm == 1) {
+            // Creating the Game Tree for MinMax
+            minmaxGameTree = new GameTreeNodeMinMax(chosenNumber, playerScore, computerScore, bank, null, isFirstPlayerComputer, 1);
+            // Calculating the weight (Evaluation) for every node of a Game Tree
+            MinMaxAlgorithm.calculateWeights();
+            // Tekosa virsotne
+            currentSelectedNodeMinMax = minmaxGameTree;
+        } else {
+            currentSelectedNode = new GameTreeNode(chosenNumber, playerScore, computerScore, bank);
+        }
 
         // Parbaude, vai pirmais gajiens ir cilveka vai datora
         if (firstMove == 1) {
@@ -268,10 +274,19 @@ public class Game {
         chosenNumber /= divisor; // Next number based on the answer
 
         // Changing current selected node for Minimax tree to its child
-        if (divisor == 2) {
-            currentSelectedNode = currentSelectedNode.getDividingBy2();
+
+        if (algorithm == 1) {
+            if (divisor == 2) {
+                currentSelectedNodeMinMax = currentSelectedNodeMinMax.getDividingBy2();
+            } else {
+                currentSelectedNodeMinMax = currentSelectedNodeMinMax.getDividingBy3();
+            }
         } else {
-            currentSelectedNode = currentSelectedNode.getDividingBy3();
+            if (divisor == 2) {
+                currentSelectedNode = currentSelectedNode.getDividingBy2();
+            } else {
+                currentSelectedNode = currentSelectedNode.getDividingBy3();
+            }
         }
 
         // Checking if player gets the point
@@ -311,12 +326,20 @@ public class Game {
     // Datora gajiens
     public static void computerMove(int divisor) {
         chosenNumber /= divisor; // Next number based on the answer
-
-        if (divisor == 2) {
-            currentSelectedNode = currentSelectedNode.getDividingBy2();
+        if (algorithm == 1) {
+            if (divisor == 2) {
+                currentSelectedNodeMinMax = currentSelectedNodeMinMax.getDividingBy2();
+            } else {
+                currentSelectedNodeMinMax = currentSelectedNodeMinMax.getDividingBy3();
+            }
         } else {
-            currentSelectedNode = currentSelectedNode.getDividingBy3();
+            if (divisor == 2) {
+                currentSelectedNode = currentSelectedNode.getDividingBy2();
+            } else {
+                currentSelectedNode = currentSelectedNode.getDividingBy3();
+            }
         }
+
 
         // Checking if computer gets the point
         if (chosenNumber % 2 == 0) {
