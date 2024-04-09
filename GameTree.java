@@ -1,6 +1,6 @@
 public class GameTree {
-    protected static final int MAX_DEPTH = 5; // koka dzilums
-    protected static final int START_DEPTH = 0;
+    public static final int MAX_DEPTH = 5; // koka dzilums
+    public static final int START_DEPTH = 0;
     public static GameTreeNode createGameTree(int number, int playerScore, int computerScore, int bank) {
         return createGameTreeNode(number, playerScore, computerScore, bank, START_DEPTH);
     }
