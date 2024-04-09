@@ -2,7 +2,7 @@
 public class AlphaBetaAlgorithm {
     public static int findBestMove() {
         // Sāk ar vismazāko alfa un vislielāko beta vērtību
-        return alphaBeta(Game.currentSelectedNode, Integer.MIN_VALUE, Integer.MAX_VALUE, true);
+        return alphaBeta(Game.currentSelectedNodeMinMax, Integer.MIN_VALUE, Integer.MAX_VALUE, true);
     }
 
     // alfa-beta algoritma implementācija
