@@ -1,12 +1,12 @@
 public class GameTree {
-    private static final int MAX_DEPTH = 4; // koka dzilums
-    private static final int START_DEPTH = 0;
+    protected static final int MAX_DEPTH = 5; // koka dzilums
+    protected static final int START_DEPTH = 0;
     public static GameTreeNode createGameTree(int number, int playerScore, int computerScore, int bank) {
         return createGameTreeNode(number, playerScore, computerScore, bank, START_DEPTH);
     }
     private static GameTreeNode createGameTreeNode(int number, int playerScore, int computerScore,
                                                    int bank, int depth) {
-        if (depth >= MAX_DEPTH) { //parbauda vai ir sasniegts koka dzilims
+        if (depth > MAX_DEPTH) { //parbauda vai ir sasniegts koka dzilims
             return null;
         }
 

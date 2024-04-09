@@ -4,8 +4,8 @@ public class MinMaxAlgorithm {
         int bestValue = Integer.MIN_VALUE;
 
         // Children of the node
-        GameTreeNodeMinMax child2 = Game.currentSelectedNode.getDividingBy2();
-        GameTreeNodeMinMax child3 = Game.currentSelectedNode.getDividingBy3();
+        GameTreeNodeMinMax child2 = Game.currentSelectedNodeMinMax.getDividingBy2();
+        GameTreeNodeMinMax child3 = Game.currentSelectedNodeMinMax.getDividingBy3();
 
         // Checking which value to choose based on the evaluation score(s) of children
         if (child2 == null) {
@@ -13,9 +13,9 @@ public class MinMaxAlgorithm {
         } else if (child3 == null) {
             bestValue = 2;
         } else {
-            if (Game.currentSelectedNode.getEvaluationScore() == child2.getEvaluationScore()) {
+            if (Game.currentSelectedNodeMinMax.getEvaluationScore() == child2.getEvaluationScore()) {
                 bestValue = 2;
-            } else if (Game.currentSelectedNode.getEvaluationScore() == child3.getEvaluationScore()) {
+            } else if (Game.currentSelectedNodeMinMax.getEvaluationScore() == child3.getEvaluationScore()) {
                 bestValue = 3;
             }
         }
