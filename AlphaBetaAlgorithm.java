@@ -1,77 +1,90 @@
-// 5.uzd
+// Alfa-Beta algoritma implementācija
 public class AlphaBetaAlgorithm {
+    // Metode, kas atrod labāko gājienu (dalītāju) izmantojot Alfa-Beta algoritmu
     public static int findBestMove() {
-        // Sāk ar vismazāko alfa un vislielāko beta vērtību
-        return alphaBeta(Game.currentSelectedNodeMinMax, Integer.MIN_VALUE, Integer.MAX_VALUE, true);
-    }
+        // Sākotnējā vērtība ir minimāla
+        int bestValue = Integer.MIN_VALUE;
+        // Labākais dalītājs
+        int bestDivisor = 0;
 
-    // alfa-beta algoritma implementācija
-    private static int alphaBeta(GameTreeNodeMinMax node, int alpha, int beta, boolean maximizingPlayer) {
-        // Ja nekas nav nodots, atgriez 0
-        if (node == null)
-            return 0;
+        // Izvērtējam pašreizējā mezgla stāvokli
+        EvaluationFunction.evaluateState(Game.currentSelectedNode);
 
-        // Ja sasniegts beigu līmenis, atgriež nodošanas novērtējumu
-        if (node.getDividingBy2() == null && node.getDividingBy3() == null) {
-            return node.getEvaluationScore();
+        // Mezgla child
+        GameTreeNode child2 = Game.currentSelectedNode.getDividingBy2();
+        GameTreeNode child3 = Game.currentSelectedNode.getDividingBy3();
+
+        // Izvēlamies labāko dalītāju pamatojoties uz bērnu novērtējuma rezultātiem
+        if (child2 == null) {
+            bestDivisor = 3; // Ja nav bērnu, tad labākais dalītājs ir 3
+        } else if (child3 == null) {
+            bestDivisor = 2; // Ja ir tikai viens bērns, tad labākais dalītājs ir 2
+        } else {
+            // Ja ir divi bērni, tad izvēlamies labāko rezultātu no tiem
+            int value2 = alphaBeta(child2, Integer.MIN_VALUE, Integer.MAX_VALUE, false);
+            int value3 = alphaBeta(child3, Integer.MIN_VALUE, Integer.MAX_VALUE, false);
+            if (value2 > value3) {
+                bestDivisor = 2; // Ja child2 ir labāks, tad labākais dalītājs ir 2
+            } else {
+                bestDivisor = 3; // Ja child3 ir labāks, tad labākais dalītājs ir 3
+            }
         }
 
-        // Ja šobrīd maksimizējamā spēlētāja gājiens
+        return bestDivisor; // Atgriežam labāko dalītāju
+    }
+
+    // Alfa-Beta algoritma rekursīvā implementācija
+    private static int alphaBeta(GameTreeNode node, int alpha, int beta, boolean maximizingPlayer) {
+        if (node == null)
+            return 0; // ja nekas netiek nodots, atgriez 0
+
+        if (node.getDividingBy2() == null && node.getDividingBy3() == null) {
+            return node.getEvaluationScore(); // Ja tas ir strupcels, atgriežam tā novērtējumu
+        }
+
+        // Ja max  gājiens
         if (maximizingPlayer) {
-            int bestDivisor = 0; // Labākās dalisanas opcijas
-            int value = Integer.MIN_VALUE; // Vērtība sākumā ir minimāla
-            // Apmeklē katru iespējamo child
+            int value = Integer.MIN_VALUE; // Sākumā vērtība ir minimāla
             if (node.getDividingBy2() != null) {
-                int childValue = alphaBeta(node.getDividingBy2(), alpha, beta, false);
-                // Ja child vērtība ir lielāka par pašreizējo vērtību, atjauno vērtību un labāko dalisanas opciju
-                if (childValue > value) {
-                    value = childValue;
-                    bestDivisor = 2;
-                }
-                alpha = Math.max(alpha, value); // Atjauno alfa vērtību
-                // Ja beta vērtība ir mazāka vai vienāda ar alfa vērtību, pārtrauc ciklu
-                if (beta <= alpha)
-                    return bestDivisor;
-            }
-            if (node.getDividingBy3() != null) {
-                int childValue = alphaBeta(node.getDividingBy3(), alpha, beta, false);
-                if (childValue > value) {
-                    value = childValue;
-                    bestDivisor = 3;
-                }
+                value = Math.max(value, alphaBeta(node.getDividingBy2(), alpha, beta, false));
                 alpha = Math.max(alpha, value);
-                if (beta <= alpha)
-                    return bestDivisor;
-            }
-            return bestDivisor;
-        } else { // Ja šobrīd minimizējamā spēlētāja gājiens
-            int bestDivisor = 0; // Labākās dalisanas opcijas
-            int value = Integer.MAX_VALUE; // Vērtība sākumā ir maksimāla
-            // Apmeklē katru iespējamo child
-            if (node.getDividingBy2() != null) {
-                int childValue = alphaBeta(node.getDividingBy2(), alpha, beta, true);
-                // Ja bērna vērtība ir mazāka par pašreizējo vērtību, atjauno vērtību un labāko dalisanas opciju
-                if (childValue < value) {
-                    value = childValue;
-                    bestDivisor = 2;
+                if (beta <= alpha) {
+                    // tiek nodots novērtējuma rezultāts šim node(tas nav obligāti)
+                    node.setEvaluationScore(value);
+                    return value;
                 }
-                beta = Math.min(beta, value); // Atjauno beta vērtību
-                // Ja beta vērtība ir mazāka vai vienāda ar alfa vērtību, pārtrauc ciklu
-                if (beta <= alpha)
-                    return bestDivisor;
             }
             if (node.getDividingBy3() != null) {
-                int childValue = alphaBeta(node.getDividingBy3(), alpha, beta, true);
-                if (childValue < value) {
-                    value = childValue;
-                    bestDivisor = 3;
+                value = Math.max(value, alphaBeta(node.getDividingBy3(), alpha, beta, false));
+                alpha = Math.max(alpha, value);
+                if (beta <= alpha) {
+                    // tiek nodots novērtējuma rezultāts šim node(tas nav obligāti)
+                    node.setEvaluationScore(value);
+                    return value;
                 }
-                beta = Math.min(beta, value);
-                if (beta <= alpha)
-                    return bestDivisor;
             }
-            return bestDivisor;
+            return value;
+        } else { // Ja min gājiens
+            int value = Integer.MAX_VALUE; // Sākumā vērtība ir maksimāla
+            if (node.getDividingBy2() != null) {
+                value = Math.min(value, alphaBeta(node.getDividingBy2(), alpha, beta, true));
+                beta = Math.min(beta, value);
+                if (beta <= alpha) {
+                    // tiek nodots novērtējuma rezultāts šim node(tas nav obligāti)
+                    node.setEvaluationScore(value);
+                    return value;
+                }
+            }
+            if (node.getDividingBy3() != null) {
+                value = Math.min(value, alphaBeta(node.getDividingBy3(), alpha, beta, true));
+                beta = Math.min(beta, value);
+                if (beta <= alpha) {
+                    // tiek nodots novērtējuma rezultāts šim node(tas nav obligāti)
+                    node.setEvaluationScore(value);
+                    return value;
+                }
+            }
+            return value;
         }
     }
 }
-
