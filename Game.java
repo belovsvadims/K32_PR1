@@ -236,7 +236,7 @@ public class Game {
             // Tekosa virsotne
             currentSelectedNodeMinMax = minmaxGameTree;
         } else {
-            currentSelectedNode = new GameTreeNode(chosenNumber, playerScore, computerScore, bank);
+            currentSelectedNode = GameTree.createGameTree(chosenNumber, playerScore, computerScore, bank);
         }
 
         // Parbaude, vai pirmais gajiens ir cilveka vai datora
